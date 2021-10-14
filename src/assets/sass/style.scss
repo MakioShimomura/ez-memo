@@ -1,0 +1,14 @@
+/* === フォントをインポート === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* === 関数および機能をインポート === */
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+/* === 変数および定義をインポート === */
+@import "variables";
+
+/* === Bootstrapなどのライブラリをインポート === */
+@import "~bootstrap/scss/bootstrap";
+
+/* === カスタムStyle === */
