@@ -1,0 +1,19 @@
+@import "src/assets/sass/style";
+.launch_layout {
+  &_body { // &_bodyでlaunch_layout_bodyにスタイルを当てるのと同じ意味
+    font-family: 'Source Code Pro', 'Noto Sans JP', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: $keyColor;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $mainColor; // ブラウザ対応したいなかった場合
+    background: $background; //普通のバックグラウンド
+    background-attachment: fixed; // position: fixed;なら必要
+  }
+}

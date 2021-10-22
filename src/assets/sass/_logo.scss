@@ -1,0 +1,37 @@
+$logo-size: 3.6em;
+.logo {
+  h1 {
+    font: $logo-size 'Press Start 2P', cursive;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: $keyColor;
+  }
+
+  .memo {
+    display: inline-block;
+    padding: 1px;
+    position: relative;
+    box-sizing: inherit;
+    background: none;
+    border: none;
+    color: $keyColor;
+
+    &_word {
+      display: block;
+
+      &_bg {
+        background-color: $background-color;
+        z-index: 3;
+        display: block;
+        position: relative;
+        overflow: hidden;
+      }
+
+      &_text {
+        padding: 8px 18px 11px 22px;
+        font: 0.44em 'Press Start 2P', cursive;
+      }
+    }
+  }
+}

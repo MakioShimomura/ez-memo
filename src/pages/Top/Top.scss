@@ -1,0 +1,26 @@
+.top {
+  .glow-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: 1.5;
+
+    .glow {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url('~@/assets/images/glow.png');
+      background-repeat: repeat;
+      background-position: center top;
+      background-attachment: fixed;
+    }
+  }
+}
