@@ -1,0 +1,15 @@
+body {
+  font-family: 'Source Code Pro', 'Noto Sans JP', sans-serif;
+  cursor: url('~@/assets/images/cursors/Arrow.cur'), auto;
+}
+button {
+  :not(:disabled) {
+    cursor: url('~@/assets/images/cursors/Hand.cur'), pointer;
+  }
+}
+h1, h2, h3, h4, h5 {
+  color: $keyColor;
+}
+p {
+  color: $primaryColor;
+}

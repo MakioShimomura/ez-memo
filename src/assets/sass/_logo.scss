@@ -17,6 +17,84 @@ $logo-size: 3.6em;
     border: none;
     color: $keyColor;
 
+    &_left {
+      top: 50%;
+      left: 0;
+      height: 100%;
+      transform: translate(0, -50%);
+      border-width: 0 0 0 1px;
+    }
+
+    &_right {
+      top: 50%;
+      right: 0;
+      height: 100%;
+      transform: translate(0, -50%);
+      border-width: 0 0 0 1px;
+    }
+
+    &_top {
+      top: 0;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, 0);
+      border-width: 1px 0 0 0;
+    }
+
+    &_bottom {
+      bottom: 0;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, 0);
+      border-width: 1px 0 0 0;
+    }
+
+    .line {
+      position: absolute;
+      z-index: 1;
+      border-color: $btn-border-color;
+      border-style: solid;
+      box-shadow: 0 0 4px $btn-box-shadow-color;
+      opacity: 0;
+      transition: all 250ms ease-in;
+    }
+
+    &_corner {
+      position: absolute;
+      z-index: 2;
+      width: 20px;
+      height: 20px;
+      border-color: $btn-corner-border-color;
+      border-style: solid;
+      box-shadow: 0 0 4px -2 $btn-box-shadow-color;
+      opacity: 0;
+      transition: all 250ms ease-in;
+    }
+
+    .left_top {
+      left: -2px;
+      top: -2px;
+      border-width: 2px 0 0 2px;
+    }
+
+    .left_bottom {
+      left: -2px;
+      bottom: -2px;
+      border-width: 0 0 2px 2px;
+    }
+
+    .right_top {
+      right: -2px;
+      top: -2px;
+      border-width: 2px 2px 0 0;
+    }
+
+    .right_bottom {
+      right: -2px;
+      bottom: -2px;
+      border-width: 0 2px 2px 0;
+    }
+
     &_word {
       display: block;
 
@@ -26,6 +104,10 @@ $logo-size: 3.6em;
         display: block;
         position: relative;
         overflow: hidden;
+        :hover {
+          background-color: $keyColor;
+          color: $background-color;
+        }
       }
 
       &_text {
