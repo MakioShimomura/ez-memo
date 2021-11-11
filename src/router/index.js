@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Top from "@/pages/Top/Top";
 import LaunchLayout from "@/layouts/LaunchLayout/LaunchLayout";
-
+import DefaultLayout from "@/layouts/DefaultLayout/DefaultLayout";
+import Elements from "../pages/Elements";
 
 const routes = [
   {
@@ -15,7 +16,17 @@ const routes = [
       }
     ]
   },
-
+  {
+    path: '/elements',
+    component: DefaultLayout,
+    children: [
+      {
+        path: '',
+        name: 'Elements',
+        component: Elements,
+      }
+    ]
+  }
 ]
 
 const router = createRouter({

@@ -1,10 +1,16 @@
 $darkColor: #090a0f;
 $mainColor: #1b2735;
 $keyColor: #26dafd;
-$primaryColor: rgba(10, 120, 150, 1); // darkとkeyの間くらいの色
+$primaryColor: rgb(15, 175, 217);
 $background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-$background-color: rgba(4,35,41,0.65); // ブラウザ対応していない時に使う
+$background-color: rgba(4,35,41,0.65);
 $btn-border-color: #029dbb;
 $btn-box-shadow-color: rgba(2,157,187,0.65);
 $btn-corner-color: rgba(38,218,253,0.65);
 $btn-corner-border-color: #26dafd;
+$dangerColor: #ff0000;
+$btn-danger-border-color: rgba(255,0,0,0.65);
+$successColor: #00ff00;
+$btn-success-border-color: rgba(0,255,0,0.65);
+$secondaryColor: #999999;
+$btn-secondary-border-color: #666;

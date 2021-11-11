@@ -1,0 +1,37 @@
+form { // formに対してデザインを付けない
+  color: $keyColor;
+
+  .form-control {
+    border-radius: 0;
+    border: 1px $keyColor solid;
+    background-color: $background-color;
+    color: $keyColor;
+    &:focus {
+      border: 1px $keyColor solid;
+      color: $keyColor;
+      background-color: $background-color;
+    }
+
+    .form-text {
+      color: $secondaryColor;
+    }
+  }
+
+  .form-check-input {
+    &[type="checkbox"], 
+    &[type="radio"] {
+      color: $keyColor;
+      background-color: $background-color;
+      border: 1px $keyColor solid;
+      &:checked {
+        background-color: $background-color;
+        color: $keyColor;
+        border: 1px $keyColor solid;
+      }
+    }
+
+    &[type="checkbox"] {
+      border-radius: 0;
+    }
+  }
+}

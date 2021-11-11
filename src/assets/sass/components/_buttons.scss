@@ -1,0 +1,97 @@
+.btn {
+  background-color: $background-color;
+  border-radius: 0;
+  border-width: 1px;
+  position: relative;
+
+  .corner {
+    width: 10px;
+    height: 10px;
+    z-index: 2;
+    opacity: 1;
+    position: absolute;
+    transition: all 250ms ease-in;
+    border-style: solid;
+  }
+
+  .left_top {
+    left: -2px;
+    top: -2px;
+    border-width: 2px 0 0 2px;
+  }
+
+  .left_bottom {
+    left: -2px;
+    bottom: -2px;
+    border-width: 0 0 2px 2px;
+  }
+
+  .right_top {
+    right: -2px;
+    top: -2px;
+    border-width: 2px 2px 0 0;
+  }
+
+  .right_bottom {
+    right: -2px;
+    bottom: -2px;
+    border-width: 0 2px 2px 0;
+  }
+
+  &.btn-primary {
+    border-color: $btn-border-color;
+    color: $keyColor;
+    .corner {
+      border-color: $keyColor;
+      box-shadow: 0 0 4px -2px $btn-border-color;
+    }
+    &:hover {
+      background-color: $keyColor;
+      color: $background-color;
+    }
+  }
+
+  &.btn-danger {
+    border-color: $btn-danger-border-color;
+    color: $dangerColor;
+    .corner {
+      border-color: $dangerColor;
+      box-shadow: 0 0 4px -2px $btn-danger-border-color;
+    }
+    &:hover {
+      background-color: $dangerColor;
+      color: $background-color;
+    }
+    &:disabled {
+      background-color: $background-color;
+      // background-color: $dangerColor;
+      color: $dangerColor;
+    }
+  }
+
+  &.btn-success {
+    border-color: $btn-success-border-color;
+    color: $successColor;
+    .corner {
+      border-color: $successColor;
+      box-shadow: 0 0 4px -2px $btn-success-border-color;
+    }
+    &:hover {
+      background-color: $successColor;
+      color: $background-color;
+    }
+  }
+
+  &.btn-secondary {
+    border-color: $btn-secondary-border-color;
+    color: $secondaryColor;
+    .corner {
+      border-color: $secondaryColor;
+      box-shadow: 0 0 4px -2px $btn-secondary-border-color;
+    }
+    &:hover {
+      background-color: $secondaryColor;
+      color: $background-color;
+    }
+  }
+}

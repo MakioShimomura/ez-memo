@@ -3,13 +3,39 @@ body {
   cursor: url('~@/assets/images/cursors/Arrow.cur'), auto;
 }
 button {
-  :not(:disabled) {
+  &:not(:disabled),
+  &[type="button"]:not(:disabled),
+  &[type="reset"]:not(:disabled),
+  &[type="submit"]:not(:disabled) {
     cursor: url('~@/assets/images/cursors/Hand.cur'), pointer;
   }
 }
+
+button {
+  &:disabled,
+  &[type="button"]:disabled,
+  &[type="reset"]:disabled,
+  &[type="submit"]:disabled {
+    cursor: url('~@/assets/images/cursors/NO.cur'), not-allowed; // not-allowdは一部ブラウザでバグあり
+  }
+}
+
 h1, h2, h3, h4, h5 {
   color: $keyColor;
 }
+
 p {
   color: $primaryColor;
+}
+
+label {
+  cursor: url('~@/assets/images/cursors/Handwriting.cur'), auto;
+}
+
+input, textarea, h1, h2, h3, h4, h5, p {
+  cursor: url('~@/assets/images/cursors/IBeam.cur'), text;
+  &[type="checkbox"],
+  &[type="radio"] {
+    cursor: url('~@/assets/images/cursors/Arrow.cur'), auto;
+  }
 }
